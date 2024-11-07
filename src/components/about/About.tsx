@@ -6,6 +6,12 @@ import aboutHair from "../../assets/img/hair_2.jpg";
 import GridGallery from "./GridGallery";
 import AboutIntro from "../AboutIntro";
 
+import menHair from "../../assets/img/men_haircut.jpeg";
+import womenHair from "../../assets/img/lady_hair.jpg";
+import shipping from "../../assets/img/shipping.jpg";
+import currency from "../../assets/img/currency-exchange.jpg";
+import serviceBanner from "../../assets/img/chris-knight--ucnC7PMDqE-unsplash.jpg"
+
 function About() {
   const slides = [
     {
@@ -87,6 +93,13 @@ function About() {
     },
   ];
 
+  const serviceImage = [
+    { image: menHair, title: "Haircut", text: "Men's, Trend" },
+    { image: womenHair, title: "Women Hair Stylist", text: "Women's, Trend" },
+    { image: shipping, title: "Shipping Services", text: "Logistics, Trend" },
+    { image: currency, title: "Currency Exchange", text: "Exchange, Trend" },
+  ];
+
   return (
     <div className=" w-full h-full ">
       <div className=" h-screen w-full relative flex flex-col items-center -z-10 ">
@@ -109,25 +122,27 @@ function About() {
           A New Standard in Our Services
         </h1>
 
-        <div className=" flex flex-row ">
-          <div className=" flex flex-col gap-4 items-center ">
-            <Image
-              src=""
-              alt="De Blessing Salon"
-              className=" w-44 h-48 lg:w-80 lg:h-96 rounded-[40%] bg-gray-500 "
-            />
-            <h1>Haircut</h1>
-            <h2 className=" text-sm font-light ">Men&apos;s Trend</h2>
-          </div>
+        <div className=" flex flex-row gap-8 ">
+          {serviceImage.map((service, index) => (
+            <div className=" flex flex-col gap-4 items-center " key={index}>
+              <Image
+                src={service.image}
+                alt="De Blessing Salon"
+                className=" w-44 h-48 lg:w-80 lg:h-96 rounded-[35%] bg-gray-500 "
+              />
+              <h1>{service.title}</h1>
+              <h2 className=" text-sm font-light ">{service.text}</h2>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className=" flex flex-col lg:flex-row justify-between items-center lg:h-screen ">
         <div className="lg:w-2/5 h-full relative">
           <Image
-            src=""
+            src={serviceBanner}
             alt="De Blessing Salon"
-            className=" w-screen lg:w-full h-screen lg:h-full  bg-gray-400 "
+            className=" w-screen lg:w-full h-screen lg:h-full object-cover bg-gray-400 "
           />
           <Image
             src={aboutHair}
@@ -145,7 +160,10 @@ function About() {
             </h1>
             <div className=" lg:w-2/4 m-auto flex flex-col gap-4 my-10 py-8 ">
               {servicesCheck.map((service, index) => (
-                <div className=" lg:w-4/5 flex flex-row items-center justify-between" key={index}>
+                <div
+                  className=" lg:w-4/5 flex flex-row items-center justify-between"
+                  key={index}
+                >
                   <div className=" flex flex-row gap-2 ">
                     <span className="material-symbols-outlined text-orange-600">
                       check
