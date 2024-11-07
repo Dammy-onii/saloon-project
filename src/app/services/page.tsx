@@ -59,7 +59,7 @@ function page() {
           </p>
         </div>
 
-        <div className=" px-10 lg:px-28 ">
+        <div className=" px-10 lg:px-28 py-10 ">
           <GridGallery items={galleryItems} />
         </div>
       </div>
