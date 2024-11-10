@@ -5,7 +5,7 @@ import Layout from "@/components/Layout/Layout";
 import CustomNavHeader from "@/components/CustomNavHeader";
 import Image from "next/image";
 
-import aboutBanner from "../../assets/img/mikael-buchholtz-k9haeLDy4GA-unsplash.jpg"
+import aboutBanner from "../../assets/img/h3-background02.png"
 import fineBoy from "../../assets/img/happyFineBoy.jpeg";
 import fineGirl from "../../assets/img/happyFineGirl.png";
 

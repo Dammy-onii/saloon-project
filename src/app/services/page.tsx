@@ -3,37 +3,38 @@ import CustomNavHeader from "@/components/CustomNavHeader";
 import Layout from "@/components/Layout/Layout";
 import React from "react";
 
+import men_1 from "../../assets/img/men_1.jpg";
+import happyfinegirl from "../../assets/img/happyFineGirl.png";
+import logistics from "../../assets/img/logistics.jpg";
+import makeup from "../../assets/img/makeup.jpg";
+
+import shipping from "../../assets/img/shipping.jpg";
+import currency from "../../assets/img/currency-exchange.jpg";
+
 function page() {
   const galleryItems = [
     {
-      image:
-        "https://images.unsplash.com/photo-1709884735626-63e92727d8b6?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+      image: men_1,
       imageHeader: "Men Haircut",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1544894079-4184d7a29169?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: happyfinegirl,
       imageHeader: "Women Hair Stylist",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1547322895-5137a4f40af6?q=80&w=1895&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: makeup,
       imageHeader: "Face & Body Makeup",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1544894079-4184d7a29169?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: logistics,
       imageHeader: "Logistic Services",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1547322895-5137a4f40af6?q=80&w=1895&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: shipping,
       imageHeader: "Shipping Services",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1709884735626-63e92727d8b6?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: currency,
       imageHeader: "Money Exchange",
     },
   ];
