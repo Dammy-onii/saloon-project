@@ -2,7 +2,6 @@ import React from "react";
 import SlideshowBanner from "./SlideshowBanner";
 import Image from "next/image";
 
-import aboutHair from "../../assets/img/hair_2.jpg";
 import GridGallery from "./GridGallery";
 import AboutIntro from "../AboutIntro";
 
